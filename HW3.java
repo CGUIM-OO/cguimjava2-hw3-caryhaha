@@ -5,6 +5,14 @@ import java.util.HashMap;
 /**
  * @author TODO: please add student ID and name here
  * Try to write some comments for your codes (methods, 10 points)
+ * B0444109林奕銜
+ * 1.首先在card class中新增一個enum來記錄花色，並把class constructor塞入之參數改為Suit和int
+ * 2.再來在Deck class新增usedCard的arraylist來儲存已發出的牌，新增nUsed來記錄發牌次數，新增ran來取亂數
+ * 3.新增shuffle()來洗牌:首先先把nUsed歸零，再來並把UsedCard中的元素權移入cards中，最後做一個跟
+ *   cards.size()次數一樣的for迴圈，從頭到尾讓每一格的值跟任意一格交換
+ * 4.新增getOneCard()來發牌，先判斷莊家是否還有牌如果沒有的話先進行洗牌，再來把cards中的第一個
+ *   元素拿出且迴傳，每做一次nUsed加一
+ * 5.在Deck constructor最後呼叫shuffle()來進行洗牌
  */
 public class HW3 {
 	public static void main(String[] args) {
